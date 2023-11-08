@@ -8,9 +8,9 @@ import { DataService } from '../services/data.service';
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent {
-  constructor(public Logger:LoggerService){};
+  constructor(public data:DataService, public log:LoggerService){};
    info(){
-    this.Logger.showInfo();
+    this.data.getData();
 
    }
 

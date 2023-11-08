@@ -8,7 +8,7 @@ export class LoggerService {
 
 
   constructor(public dataService:DataService) { }
-  showInfo(){
-    this.dataService.displayInfo();
+  Print(object:any){
+    this.dataService.getData();
   }
 }

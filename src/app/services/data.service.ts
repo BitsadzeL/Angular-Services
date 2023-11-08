@@ -6,16 +6,16 @@ import { LoggerService } from './logger.service';
 })
 export class DataService {
 
-  // constructor(public Logger:LoggerService) { }
+   constructor(public Logger:LoggerService) { }
 
   Data:any[]=[];
 
-  receiveInfo(object:any){
+  setData(object:any){
     this.Data=object;
   }
 
-  displayInfo(){
-    return this.Data;
+  getData(){
+    this.Logger.Print(this.Data);
   }
   
 }

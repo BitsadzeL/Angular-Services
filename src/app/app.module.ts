@@ -6,18 +6,20 @@ import { AppComponent } from './app.component';
 import { LoggerService } from './services/logger.service';
 import { UsersComponent } from './users/users.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { WeatherComponent } from './weather/weather.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [LoggerService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

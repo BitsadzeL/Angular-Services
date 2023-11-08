@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../services/data.service';
 import { LoggerService } from '../services/logger.service';
 import { User } from '../user';
 
@@ -9,7 +10,7 @@ import { User } from '../user';
 })
 export class UsersComponent {
 
-  constructor(public Logger:LoggerService){}
+  constructor(public data:DataService){}
 
   // users : any[]=[
   //   {
@@ -49,7 +50,12 @@ export class UsersComponent {
       name:"asdgsa",
       lastName:"afdsgs",
     },
-  ]
+  ];
+
+  displayUsers(){
+    this.data.setData(this.people);
+  }
+  
 
 
 
